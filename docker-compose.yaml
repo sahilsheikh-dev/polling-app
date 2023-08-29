@@ -27,9 +27,9 @@ services:
       context: polling-app-client # Use an image built from the specified dockerfile in the `polling-app-client` directory.
       dockerfile: Dockerfile
       args:
-        REACT_APP_API_BASE_URL: http://127.0.0.1:8080/api
+        REACT_APP_API_BASE_URL: http://<HOST_IP>:8080/api   # replace <HOST_IP> with the ip of the server
     ports:
-      - "9090:80" # Map the exposed port 80 on the container to port 9090 on the host machine
+      - "80:80" # Map the exposed port 80 on the container to port 80 on the host machine
     restart: always
     depends_on:
       - app-server
