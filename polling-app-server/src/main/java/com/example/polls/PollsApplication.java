@@ -23,8 +23,8 @@ public class PollsApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**").allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH");
-//            	registry.addMapping("/**").allowedOrigins("http://localhost:3000").allowedMethods("GET", "POST", "PUT", "DELETE");
+				//registry.addMapping("/**").allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH");
+				registry.addMapping("/**").allowedOrigins("http://localhost:9090").allowedMethods("GET", "POST", "PUT", "DELETE");
 			}
 		};
 	}
