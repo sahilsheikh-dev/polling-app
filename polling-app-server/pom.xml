@@ -8,7 +8,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>polls</name>
-	<description>Polling App built with Spring Boot, Spring Security, MySQL and JWT</description>
+	<description>Polling App built with Spring Boot, Spring Security, MySQL and
+		JWT</description>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
