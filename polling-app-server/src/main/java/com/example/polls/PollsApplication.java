@@ -28,8 +28,8 @@ public class PollsApplication {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 				System.out.println("STATUS_IP" + myAppMessage);
-				registry.addMapping("/**").allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH");
-//				registry.addMapping("/**").allowedOrigins("http://" + myAppMessage + ":8081").allowedMethods("*");
+//				registry.addMapping("/**").allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH");
+				registry.addMapping("/**").allowedOrigins("http://" + myAppMessage + ":8081").allowedMethods("*");
 			}
 		};
 	}
